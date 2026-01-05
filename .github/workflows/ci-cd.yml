@@ -43,6 +43,4 @@ jobs:
       run: |
         docker build -t ghcr.io/zhangchunlu1/flaskdemo/my-python-app:${{ github.run_number }} .
 
-    - name: Push Docker image
-      run: |
-        docker push ghcr.io/zhangchunlu1/flaskdemo/my-python-app:${{ github.run_number }}
+   
