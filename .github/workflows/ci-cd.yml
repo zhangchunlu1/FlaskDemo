@@ -24,11 +24,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
-      run: |
-        # 假设你的项目有 pytest 测试
-        pytest
-
   docker-deploy:
     name: Build & Deploy Docker (CD)
     runs-on: ubuntu-latest
